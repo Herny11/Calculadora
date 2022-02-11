@@ -11,4 +11,6 @@ instruciones:
 
 # preview
 
+![alt text](https://raw.githubusercontent.com/Herny11/calculadora/master/readme.png?raw=true)
+
 https://raw.githubusercontent.com/Herny11/calculadora/master/readme.png
