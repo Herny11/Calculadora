@@ -1,30 +1,96 @@
-$(function(){
-
-    $("#calcular").click(function(){
-        console.log("funciono la wea")
-
-        var numero1 = $("#numero1").val()
-        var numero2 = $("#numero2").val()
-
-        console.log("N1 --> " + numero1, "N2 -->" + numero2)
-
-        var resultado = sumar(numero1, numero2)
-
-        $("#resultado").text(resultado + " 😂")
-
-        console.log("El resultado es: "  + resultado)
-
-        
-    })
-})
-function sumar(numero1, numero2){
-    var resultado = Number(numero1) + Number(numero2)
-    return resultado
+alert("BIENVENIDO A LA CALCULADORA 🧮")
+var num = "";
+function write_display(number)
+{
+    num = num + $(number).val();
+    $("#number").val(num);
+    
 }
-function mutiplicadox3(numero){
+var num1 = "";
+var operation = "";
+function calculate(symbol)
+{
+    operation = $(symbol).val();
+    num1 = num;
+    num = "";
+    $("#number").val("");
 
-    for (i= 1; i <= 3; i++)
+}
+function oper()
+{
+    var op = operation;
+    var result = 0;
 
-        console.log(i)
-        resultado = resultado + numero
+
+    switch (op) 
+    { 
+        case '÷':
+            if (num == "")
+            {
+                
+                num = num + $(number).val();
+                $("#number").val(num);
+                
+            }
+            else
+            {
+                result = parseInt(num1) / parseInt(num);
+                num = result;
+                $("#number").val(result);
+            }
+            break;
+        case 'x': 
+            if (num == "")
+            {
+                
+                num = num + $(number).val();
+                $("#number").val(num);
+                
+            }
+            else
+            {
+                result = parseInt(num1) * parseInt(num);
+                num = result;
+                $("#number").val(result);
+            }
+            
+            break;
+        case '+': 
+            if (num == "")
+            {
+                
+                num = num + $(number).val();
+                $("#number").val(num);
+                
+            }
+            else
+            {
+                result = parseInt(num1) + parseInt(num);
+                num = result;
+                $("#number").val(result);
+            }
+            break;
+        case '-': 
+            if (num == "")
+            {
+                
+                num = num + $(number).val();
+                $("#number").val(num);
+                
+            }
+            else
+            {
+                result = parseInt(num1) - parseInt(num);
+                num = result;
+                $("#number").val(result);
+            }
+            break;	
+
+    }
+
+}
+function clean()
+{
+    $("#number").val("");
+
 }
