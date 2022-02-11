@@ -91,6 +91,8 @@ function oper()
 }
 function clean()
 {
+    num = ""
+    num1 = ""
     $("#number").val("");
 
 }
