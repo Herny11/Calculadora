@@ -9,3 +9,6 @@ instruciones:
 2 permite limpiar la pantalla con el boton DEL.
 3 si por error no se digita un segundo numero para operar, permite volver a ingresar un dato sin perder lo anterior.
 
+# preview
+
+https://raw.githubusercontent.com/Herny11/calculadora/master/readme.png
